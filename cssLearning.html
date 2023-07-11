@@ -1,36 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Learning</title>
     <style>
-        li{
+      /* li{
             color: orange;
-        }
-        h4{
-            color: cadetblue;
-        }
-        #Summary{
-            color: chocolate;
-        }
-        span{
-            color: blue;
-        }
+        } */
+      h4 {
+        color: cadetblue;
+      }
+      #Summary {
+        color: chocolate;
+      }
+      span {
+        color: red;
+        background-color: bisque;
+      }
+      #summary2,
+      #summary3,
+      h3 {
+        color: cadetblue;
+        font-weight: bold;
+        font-size: larger;
+        text-transform: uppercase;
+        font-style: italic;
+      }
+      .fruit {
+        /* color: rgb(30,100,100); */
+        color: hsl(300, 66%, 32%);
+      }
+      .para {
+        color: #000000;
+        font-size: 25px;
+        font-weight: bolder;
+        text-transform: capitalize;
+        letter-spacing: 2px;
+        word-spacing: 5px;
+        /* text-decoration: underline; */
+        text-shadow: 6px 3px 0px rgba(0,0,0,0.6);
+      }
+      .listFruits{
+        border: 2px solid red;
+        text-align: left;
+        font-family: 'Courier New', Courier, monospace;
+      }
+      .lorem{
+        color: red;
+        text-decoration: underline;
+        font-size: larger;
+      }
     </style>
-
-</head>
-<body>
-    <h2 style="color: red; text-transform: uppercase; text-decoration: underline; font-style: italic;">my personal details</h2>
-    <p style="color: orange; font-weight: bolder; font-size: large;">Lorem ipsum dolor sit amet consectetur.</p>
+  </head>
+  <body>
+    <h2
+      style="
+        color: red;
+        text-transform: uppercase;
+        text-decoration: underline;
+        font-style: italic;
+      "
+    >
+      my personal details
+    </h2>
+    <p style="color: orange; font-weight: bolder; font-size: large">
+      Lorem ipsum dolor sit amet consectetur.
+    </p>
 
     <h3 id="Summary">My Professional Summary</h3>
     <ul>
-        <li>Lorem, ipsum dolor.</li>
-        <li>Lorem ipsum dolor sit amet consectetur.</li>
-        <li>Lorem, ipsum.</li>
-        <li>Lorem ipsum dolor sit.</li>
+      <li>Lorem, ipsum dolor.</li>
+      <li id="summary2">Lorem ipsum dolor sit amet consectetur.</li>
+      <li id="summary3">Lorem, ipsum.</li>
+      <li>Lorem ipsum dolor sit.</li>
     </ul>
     <h3>My <span>Permanant</span> Address</h3>
-</body>
+    <h3 class="listFruits">List Of Fruits</h3>
+    <ol>
+      <li>Apple</li>
+      <li class="fruit">Mango</li>
+      <li class="fruit">Water Melon</li>
+      <li>Grapes</li>
+    </ol>
+    <p class="para">
+      <span class="lorem">Lorem ipsum dolor</span> sit amet consectetur adipisicing elit. Odit dolore
+      debitis, quae harum quasi nulla nobis veritatis ea laboriosam animi.
+    </p>
+  </body>
 </html>
