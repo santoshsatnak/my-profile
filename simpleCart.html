@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Card</title>
+    <style>
+        .photo-section{
+            display: inline-block;
+        }
+        .content-section{
+            display: inline-block;
+        }
+        .point li{
+            padding: 10px;
+            list-style-type: none;
+        }
+        .point li::before{ 
+               
+               content:"✍️" 
+               
+        }
+        .point:hover{
+            background-color: cadetblue;
+        }
+        .para::selection{
+            color: #f31010;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+    <div class="photo-section"></div>
+    <img src="Image20230621071836.png">
+    <div class="content-section">
+        <h2>Content Section</h2>
+        <ul class="point">
+            <li>lorem 4</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem ipsum dolor sit.</li>
+        </ul>
+    </div>
+    <p class="para">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et voluptates quam dolore. ipsum dolor sit amet consectetur adipisicing elit. Magnam ut tempore soluta aspernatur eius deserunt.
+    </p>
+</body>
+</html>
